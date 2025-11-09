@@ -12,4 +12,4 @@ It's been a busy week in the **Trucks to Tech** lab! Here's whar's been rolling:
 Each win adds another piece to the bigger journey: turning routes into networkroutes, and watching the roadmap unfold one command at a time.
 
 Stay tuned-Security+ is on the horizon!
-md
+
