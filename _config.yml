@@ -1,3 +1,6 @@
 title: "Trucks to Tech"
 description: "Documenting my IT journey from trucking to tech."
 theme: minima
+
+header_pages:
+ - projects.md
