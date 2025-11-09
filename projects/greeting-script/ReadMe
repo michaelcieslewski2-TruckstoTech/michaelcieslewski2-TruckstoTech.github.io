@@ -1,0 +1,62 @@
+🧠 Login Greeter Script
+
+A personal Bash project built in my home lab environment.
+When I log into my Ubuntu VM, this script greets me by name, shows the date and time, local Kansas City weather, top KC headlines, a random dad joke, and a motivational quote to start the day.
+
+⚙️ Features
+
+📅 Displays current day, date, and time
+
+🌤 Fetches live Kansas City weather data
+
+📰 Pulls top 5 local news headlines (with clickable links)
+
+🤣 Generates a random “dad joke”
+
+💬 Prints a motivational quote of the day
+
+🧩 Modular Bash functions (easy to expand)
+
+🧠 Runs automatically at login (optional)
+
+🚀 How to Run
+chmod +x login_greeter.sh
+./login_greeter.sh
+
+
+If you want it to run automatically each time you open a terminal, add this line to the bottom of your ~/.bashrc file:
+
+~/michaelcieslewski2-TruckstoTech.github.io/projects/greeting-script/login_greeter.sh
+
+🧰 Requirements
+
+Bash (tested on Ubuntu 22.04+)
+
+Python 3 (preinstalled on Ubuntu)
+
+curl command-line tool
+
+Internet connection (for weather and news APIs)
+
+🧩 Code Overview
+Function	Description
+greet()	Displays the welcome message and timestamp
+weather()	Fetches current weather for Kansas City
+local_news()	Grabs live KC headlines via Google News & KCUR RSS feeds
+dad_joke()	Prints a random dad joke
+quote_of_the_day()	Shows a motivational quote
+say()	Formats text output for color and style
+🧪 Future Improvements
+
+Add color-coded weather icons (🌧, 🌞, ❄️)
+
+Add random tech tip of the day
+
+Cache last news feed for offline mode
+
+Add configuration file (~/.greeter.conf) for user city and preferences
+
+🧾 License
+
+MIT License — free to use, modify, and share.
+If you build your own greeter, just credit this repo in your README.
