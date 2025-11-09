@@ -1,0 +1,16 @@
+---
+layout: page
+title: Projects
+permalink: /projects/
+---
+
+## 🧠 Projects and Scripts
+
+### [Login Greeter Script](./projects/greeting-script/)
+A Bash login script that fetches:
+- Real-time weather 🌤  
+- Kansas City news 📰  
+- Dad joke and daily quote 💬  
+- Optional automatic launch on login  
+
+[View it on GitHub →](https://github.com/michaelcieslewski2-TruckstoTech/michaelcieslewski2-TruckstoTech.github.io/tree/main/projects/greeting-script)
