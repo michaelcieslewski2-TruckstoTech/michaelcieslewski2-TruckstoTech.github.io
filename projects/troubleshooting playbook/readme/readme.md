@@ -7,7 +7,7 @@ Each drill simulates a real-world IT issue that I diagnose step-by-step to build
 
 ## 📘 Drills
 
-- [Drill 01 – Wi-Fi DHCP Failure](/projects/troubleshooting-playbook/drill01/)
+- [Drill 01 – Wi-Fi DHCP Failure](/projects/troubleshooting%20playbook/drill01/)
 - [Drill 02 – DNS / Shared Drive Failure](/projects/troubleshooting%20playbook/drill02_dns_drive.md)
 - [Drill 03 – Outlook Loading Profile](main/projects/troubleshooting%20playbook/drill03_outlook_ost.md)
 - [Drill 04 – Failing HDD Misdiagnosed](/projects/troubleshooting%20playbook/drill04_failing_hdd.md)
