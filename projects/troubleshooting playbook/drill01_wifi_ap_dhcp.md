@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Drill 1"
-permalink: /projects/troubleshooting-playbook/drill01/
+permalink: /projects/troubleshooting playbook/drill01/
 ---
 
 
