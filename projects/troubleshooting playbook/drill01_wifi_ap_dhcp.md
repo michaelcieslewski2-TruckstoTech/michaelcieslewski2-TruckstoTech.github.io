@@ -1,3 +1,11 @@
+---
+layout: page
+title: "Drill 1"
+permalink: /projects/troubleshooting-playbook/drill01/
+---
+
+
+
 # Troubleshooting Drill #1 – Wi-Fi / AP DHCP Failure  
 **Difficulty:** Easy–Medium  
 
