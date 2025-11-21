@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Troubleshooting Drill #4 – " "Network Slow" Actually a Failing HDD "
+title: "Troubleshooting Drill #4 – Outlook Stuck on “Loading Profile” "
 permalink: /projects/troubleshooting%20playbook/drill04/
 ---
 
