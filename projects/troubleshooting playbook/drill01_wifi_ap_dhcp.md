@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Drill 1"
-permalink: /projects/troubleshooting playbook/drill01_wifi_ap_dhcp.md
+permalink: /projects/troubleshooting-playbook/drill01/
 ---
 
 
