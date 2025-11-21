@@ -7,8 +7,8 @@ Each drill simulates a real-world IT issue that I diagnose step-by-step to build
 
 ## 📘 Drills
 
-- [Drill 01 – Wi-Fi DHCP Failure](https://github.com/michaelcieslewski2-TruckstoTech/michaelcieslewski2-TruckstoTech.github.io/blob/Trouble-shooting-playbook/projects/troubleshooting%20playbook/drill01_wifi_ap_dhcp.md))
-- [Drill 02 – DNS / Shared Drive Failure](drill02_dns_drive.md)
+- [Drill 01 – Wi-Fi DHCP Failure](https://github.com/michaelcieslewski2-TruckstoTech/michaelcieslewski2-TruckstoTech.github.io/blob/Trouble-shooting-playbook/projects/troubleshooting%20playbook/drill01_wifi_ap_dhcp.md)
+- [Drill 02 – DNS / Shared Drive Failure](https://github.com/michaelcieslewski2-TruckstoTech/michaelcieslewski2-TruckstoTech.github.io/blob/Trouble-shooting-playbook/projects/troubleshooting%20playbook/drill02_dns_drive.md)
 - [Drill 03 – Outlook Loading Profile](drill03_outlook_ost.md)
 - [Drill 04 – Failing HDD Misdiagnosed](drill04_failing_hdd.md)
 - [Drill 05 – Local vs Domain Login Issue](drill05_login_domain.md)
