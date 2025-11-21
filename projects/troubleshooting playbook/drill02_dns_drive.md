@@ -1,3 +1,10 @@
+---
+layout: page
+title: "Drill 2"
+permalink: /projects/troubleshooting%20playbook/drill02/
+---
+
+
 # Troubleshooting Drill #2 – Shared Drive / DNS Issue  
 **Difficulty:** Medium  
 
