@@ -1,0 +1,261 @@
+🚀 Trucks-to-Tech: Daily Troubleshooting Playbook
+
+A curated collection of real-world troubleshooting drills demonstrating step-by-step technical reasoning, escalation logic, and root-cause identification.
+
+📘 How to Use This Playbook
+
+This playbook is designed to help you:
+
+Track your troubleshooting growth
+
+Document realistic IT problem-solving scenarios
+
+Build a professional knowledge base
+
+Prepare for helpdesk, desktop support, and SOC analyst roles
+
+Showcase hands-on debugging skill on GitHub
+
+Each drill includes:
+
+Difficulty rating
+
+Scenario
+
+Environment
+
+Step-by-step troubleshooting
+
+Root cause
+
+Lesson learned
+
+🧪 Drill #1 — Wi-Fi / Access Point DHCP Failure
+
+Difficulty: Easy–Medium
+
+Scenario
+
+User cannot access the internet; Wi-Fi says “Connected, no internet.”
+
+Environment
+
+Windows 10 laptop
+
+Corporate Wi-Fi
+
+Other users unaffected
+
+Troubleshooting Steps
+
+Ran ipconfig /all → APIPA 169.254 address.
+
+Tried ipconfig /renew → DHCP unreachable.
+
+Wired test works → DHCP server healthy.
+
+Tested another Wi-Fi client → also fails.
+
+Inspected AP’s switch port → uplink cable loose.
+
+Reseated cable → AP regains DHCP connectivity.
+
+Root Cause
+
+Loose AP uplink cable preventing DHCP traffic.
+
+Lesson Learned
+
+If Wi-Fi has APIPA and wired works → check AP’s uplink first.
+
+🧪 Drill #2 — Shared Drive Not Accessible (DNS Issue)
+
+Difficulty: Medium
+
+Scenario
+
+User cannot access mapped drive S: → \\FILE-SRV01\Shared.
+
+Troubleshooting Steps
+
+ping FILE-SRV01 fails;
+
+ping <server IP> works;
+
+ipconfig /all shows DNS = 8.8.8.8 (public).
+
+Reset DNS to internal servers.
+
+Ping hostname works; drive reconnects.
+
+Root Cause
+
+Client using public DNS, unable to resolve internal hostnames.
+
+Lesson Learned
+
+If IP works but hostname doesn’t → it’s DNS. Always DNS.
+
+🧪 Drill #3 — Outlook Stuck on “Loading Profile”
+
+Difficulty: Medium–Hard
+
+Scenario
+
+Outlook hangs indefinitely on startup.
+
+Troubleshooting Steps
+
+OWA works → mailbox/server OK.
+
+Killed hung Outlook processes.
+
+Profile repair fails → deeper issue.
+
+Safe Mode fails → not add-ins.
+
+Autodiscover reset fails.
+
+Renamed OST file → Outlook rebuilds → launches successfully.
+
+Root Cause
+
+Corrupted OST file.
+
+Lesson Learned
+
+OWA vs desktop Outlook instantly isolates profile/cache corruption.
+
+🧪 Drill #4 — “Network Slow” (Actually: Failing HDD)
+
+Difficulty: Medium–Spicy
+
+Scenario
+
+User claims the network is slow, but entire system is lagging.
+
+Troubleshooting Steps
+
+Task Manager → Disk 100%.
+
+Defender scanning aggressively.
+
+Event Viewer → disk I/O errors + bad blocks.
+
+Checked Windows Security → no malware.
+
+Backed up user data.
+
+Scheduled drive replacement.
+
+Root Cause
+
+Failing HDD causing system-wide stalls and disk timeouts.
+
+Lesson Learned
+
+Not every “network problem” is the network — check system health.
+
+🧪 Drill #5 — “Password Incorrect” (Local Login Trick)
+
+Difficulty: Spicy–Hard
+
+Scenario
+
+User insists their password is correct but cannot log in.
+
+Troubleshooting Steps
+
+Confirmed other users can log in → AD healthy.
+
+Login screen shows Sign in to: This device (local login).
+
+Checked Ethernet cable → loose; no domain connectivity.
+
+Reseated cable → domain reachable.
+
+User logs in successfully.
+
+Root Cause
+
+PC defaulted to local login due to no network/domain connection.
+
+Lesson Learned
+
+“Password incorrect” often = wrong login scope, not wrong password.
+
+🧪 Drill #6 — VPN Connects but No Internet or Internal Access
+
+Difficulty: Hard
+
+Scenario
+
+User connects VPN successfully, but loses ALL connectivity.
+
+Troubleshooting Steps
+
+Baseline internet works without VPN.
+
+Compared ipconfig before/after VPN.
+
+After VPN:
+
+DNS = 0.0.0.0
+
+Gateway missing
+
+Wi-Fi shows “Media disconnected”
+
+ipconfig /flushdns / registerdns → no change.
+
+Reset VPN virtual adapter:
+
+netsh int ip reset
+netsh winsock reset
+
+
+Reinstalled VPN client.
+
+VPN reconnect → proper DNS and routes restored.
+
+Root Cause
+
+Corrupted VPN virtual adapter pushing invalid DNS and routing.
+
+Lesson Learned
+
+VPN issues are usually routing/DNS, not the VPN server.
+
+🧪 Drill #7 — Intermittent Wi-Fi Drops Every 5–10 Minutes
+
+Difficulty: Very Spicy
+
+Scenario
+
+Wi-Fi stays “connected” but traffic drops frequently for 20–30 seconds.
+
+Troubleshooting Steps
+
+User tests near different AP → no drops.
+
+Continuous ping shows intermittent traffic loss.
+
+User reports issue worse when plugged in → power clue.
+
+Checked Wi-Fi adapter power settings →
+
+“Allow computer to turn off this device” = enabled.
+
+Checked Power Plan → Wireless set to “Maximum Power Saving.”
+
+Set both battery + AC to Maximum Performance.
+
+Traffic stable; drops resolved.
+
+Root Cause
+
+Power-saving mode throttling Wi-Fi adapter, cutting traffic intermittently.
+
+Lesson Learned
+
+Power-saving features can cripple Wi-Fi even when signal looks strong.
