@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Troubleshooting Drill #4 – Outlook Stuck on “Loading Profile” "
+title: "Troubleshooting Drill #4 – Failing HDD Misdiagnosed "
 permalink: /projects/troubleshooting%20playbook/drill04/
 ---
 
