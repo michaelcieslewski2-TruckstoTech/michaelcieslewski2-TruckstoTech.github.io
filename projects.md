@@ -18,4 +18,5 @@ Bash login greeter that shows KC weather, local headlines (clickable), a dad jok
 ### Troubleshooting Playbook
 This is a step by step guide of the different troubleshooting issuses I do each morning and the steps i take to solve each. 
 
-[Open the Playbook](https://github.com/michaelcieslewski2-TruckstoTech/michaelcieslewski2-TruckstoTech.github.io/tree/Trouble-shooting-playbook/projects/troubleshooting%20playbook/readme)
+[Open the Troubleshooting Playbook](/projects/troubleshooting%20playbook/readme/)
+
