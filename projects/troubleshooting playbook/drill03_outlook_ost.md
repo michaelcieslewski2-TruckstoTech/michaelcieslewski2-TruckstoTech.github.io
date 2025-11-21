@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Troubleshooting Drill #3 – Outlook Stuck on “Loading Profile”"
+title: "Troubleshooting Drill #3 – Outlook Stuck on “Loading Profile” "
 permalink: /projects/troubleshooting%20playbook/drill03/
 ---
 
