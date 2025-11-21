@@ -1,4 +1,8 @@
-# About the Troubleshooting Playbook
+---
+layout: page
+title: "About the Troubleshooting Playbook"
+permalink: /projects/troubleshooting%20playbook/about/about/
+---
 
 This playbook documents the daily troubleshooting drills I complete each morning to strengthen my real-world IT problem-solving skills.
 
