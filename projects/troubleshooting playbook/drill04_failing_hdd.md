@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Troubleshooting Drill #4 – "Network Slow" (Actually a Failing HDD) "
-permalink: /projects/troubleshooting%20playbook/drill03/
+permalink: /projects/troubleshooting%20playbook/drill04/
 ---
 
 
