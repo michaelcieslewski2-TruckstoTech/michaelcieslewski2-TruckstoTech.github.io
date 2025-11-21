@@ -1,8 +1,10 @@
 ---
 layout: page
-title: "Troubleshooting Drill #3 – Outlook Loading Profile"
+title: "Troubleshooting Drill #3 – Outlook “Loading Profile…” / OST Corruption"
 permalink: /projects/troubleshooting%20playbook/drill03/
 ---
+
+
 
  
 **Difficulty:** Medium–Hard  
