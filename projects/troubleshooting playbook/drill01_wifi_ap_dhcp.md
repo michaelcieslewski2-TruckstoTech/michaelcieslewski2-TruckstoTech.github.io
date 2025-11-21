@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Drill 1 – Wi-Fi / AP DHCP Failure"
+title: "Troubleshooting Drill #1 – Wi-Fi / AP DHCP Failure"
 permalink: /projects/troubleshooting%20playbook/drill01/
 ---
 
