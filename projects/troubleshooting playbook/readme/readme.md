@@ -13,7 +13,7 @@ Each drill simulates a real-world IT issue that I diagnose step-by-step to build
 - [Drill 04 – Failing HDD Misdiagnosed](https://github.com/michaelcieslewski2-TruckstoTech/michaelcieslewski2-TruckstoTech.github.io/blob/main/projects/troubleshooting%20playbook/drill04_failing_hdd.md)
 - [Drill 05 – Local vs Domain Login Issue](https://github.com/michaelcieslewski2-TruckstoTech/michaelcieslewski2-TruckstoTech.github.io/blob/main/projects/troubleshooting%20playbook/drill05_login_domain.md)
 - [Drill 06 – VPN Routing/DNS Issue](https://github.com/michaelcieslewski2-TruckstoTech/michaelcieslewski2-TruckstoTech.github.io/blob/main/projects/troubleshooting%20playbook/drill06_vpn_routing.md)
-- [Drill 07 – Wi-Fi Power Saving Dropouts](https://github.com/michaelcieslewski2-TruckstoTech/michaelcieslewski2-TruckstoTech.github.io/blob/Trouble-shooting-playbook/projects/troubleshooting%20playbook/drill07_wifi_power_save.md)
+- [Drill 07 – Wi-Fi Power Saving Dropouts](https://github.com/michaelcieslewski2-TruckstoTech/michaelcieslewski2-TruckstoTech.github.io/blob/main/projects/troubleshooting%20playbook/drill07_wifi_power_save.md)
 
 ---
 
