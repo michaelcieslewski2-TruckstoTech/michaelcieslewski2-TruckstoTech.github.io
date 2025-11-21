@@ -18,4 +18,4 @@ Each drill simulates a real-world IT issue that I diagnose step-by-step to build
 ---
 
 ## ℹ️ About This Playbook
-See the [About Page](https://github.com/michaelcieslewski2-TruckstoTech/michaelcieslewski2-TruckstoTech.github.io/blob/Trouble-shooting-playbook/projects/troubleshooting%20playbook/about/about.md) for the purpose, goals, and learning philosophy behind this project.
+See the [About Page](https://github.com/michaelcieslewski2-TruckstoTech/michaelcieslewski2-TruckstoTech.github.io/blob/main/projects/troubleshooting%20playbook/about/about.md) for the purpose, goals, and learning philosophy behind this project.
