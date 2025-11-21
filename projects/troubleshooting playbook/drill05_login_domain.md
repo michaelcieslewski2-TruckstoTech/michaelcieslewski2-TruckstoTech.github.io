@@ -1,8 +1,9 @@
 ---
 layout: page
-title: "Troubleshooting Drill #5 – Password Incorrect "Local vs Domain Login" "
+title: "Drill 5 - Password Incorrect (Local vs Domain Login)"
 permalink: /projects/troubleshooting%20playbook/drill05/
 ---
+
 
 
 # Troubleshooting Drill #5 – Password Incorrect (Local vs Domain Login)  
