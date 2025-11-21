@@ -1,4 +1,10 @@
-# Troubleshooting Drill #7 – Intermittent Wi-Fi Drops (Power Saving Issue)  
+---
+layout: page
+title: "Troubleshooting Drill #7 – Intermittent Wi-Fi Drops (Power Saving Issue)"
+permalink: /projects/troubleshooting%20playbook/drill07/
+---
+
+
 **Difficulty:** Very Spicy  
 
 ## Scenario  
