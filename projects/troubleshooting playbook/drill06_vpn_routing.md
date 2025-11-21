@@ -1,4 +1,10 @@
-# Troubleshooting Drill #6 – VPN Connects but No Internet or Internal Access  
+---
+layout: page
+title: "Troubleshooting Drill #6 – VPN Connects but No Internet or Internal Access"
+permalink: /projects/troubleshooting%20playbook/drill06/
+---
+
+ 
 **Difficulty:** Hard  
 
 ## Scenario  
