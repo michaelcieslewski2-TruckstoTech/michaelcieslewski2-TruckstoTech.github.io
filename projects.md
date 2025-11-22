@@ -8,11 +8,11 @@ permalink: /projects/
 ## Projects and Scripts
 
 
-### [Login Greeter Script](https://github.com/michaelcieslewski2-TruckstoTech/michaelcieslewski2-TruckstoTech.github.io/tree/main/projects/greeting-script)
+### Login Greeter Script
 Bash login greeter that shows KC weather, local headlines (clickable), a dad joke, and a quote 
 
-- [View the script](https://github.com/michaelcieslewski2-TruckstoTech/michaelcieslewski2-TruckstoTech.github.io/blob/main/projects/greeting-script/login_greeter.sh)
-- [ReadMe](https://github.com/michaelcieslewski2-TruckstoTech/michaelcieslewski2-TruckstoTech.github.io/blob/main/projects/greeting-script/ReadMe)
+- [View the script](/projects/greeting-script/login_greeter.sh)
+- [ReadMe](/projects/greeting-script/ReadMe)
 
 
 ### Troubleshooting Playbook
