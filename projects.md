@@ -11,8 +11,8 @@ permalink: /projects/
 ### Login Greeter Script
 Bash login greeter that shows KC weather, local headlines (clickable), a dad joke, and a quote 
 
-- [View the script](/projects/greeting-script/login_greeter.sh)
-- [ReadMe](/projects/greeting-script/ReadMe)
+- [View the script](/projects/greeting-script/login_greeter.md)
+- [ReadMe](/projects/greeting-script/ReadMe.md)
 
 
 ### Troubleshooting Playbook
