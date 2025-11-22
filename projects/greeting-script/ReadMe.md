@@ -1,4 +1,4 @@
-🧠 Login Greeter Script
+# 🧠 Login Greeter Script
 
 A personal Bash project built in my home lab environment.
 When I log into my Ubuntu VM, this script greets me by name, shows the date and time, local Kansas City weather, top KC headlines, a random dad joke, and a motivational quote to start the day.
