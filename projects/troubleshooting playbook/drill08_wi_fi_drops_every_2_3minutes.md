@@ -40,14 +40,14 @@ ping -t <gateway_or_domain_controller_IP>
 
 2. Check the IP & DHCP Lease
 
-  Run:
+      Run:
 
-  ipconfig /all
+      ipconfig /all
 
 
-  For the Wireless adapter, verify:
+      For the Wireless adapter, verify:
 
-   - IPv4 address
+           - IPv4 address
 
    - Subnet mask
 
