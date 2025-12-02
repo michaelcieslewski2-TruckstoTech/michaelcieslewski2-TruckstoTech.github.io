@@ -14,6 +14,7 @@ Each drill simulates a real-world IT issue that I diagnose step-by-step to build
 - [Drill 05 – Local vs Domain Login Issue](/projects/troubleshooting%20playbook/drill05/)
 - [Drill 06 – VPN Routing/DNS Issue](/projects/troubleshooting%20playbook/drill06/)
 - [Drill 07 – Wi-Fi Power Saving Dropouts](/projects/troubleshooting%20playbook/drill07/)
+- [Drill 08 – Wi-Fi Drops Every 2–3 Minutes (Single User)](/projects/troubleshooting%20playbook/drill08/)
 
 ---
 
