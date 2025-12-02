@@ -114,6 +114,3 @@ o	No repeating timeouts every 2–3 minutes
 o	Event Viewer stays clean
 ✅ Root cause from this drill:
 Outdated wireless driver → 802.1X reauth failures → DHCP renewal fails → Wi-Fi drops on a repeating pattern.
-
-
-<img width="393" height="3595" alt="image" src="https://github.com/user-attachments/assets/ed861ac5-b0b7-428a-9fc5-b3a5c4ba0f10" />
