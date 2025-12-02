@@ -181,13 +181,13 @@ If failures always happen at the 2–3 minute mark, you’re looking at:
 
 6.2 Disable Power Saving on the NIC
 
-Device Manager → Adapter → Properties → Power Management
+- Device Manager → Adapter → Properties → Power Management
 
 Uncheck:
 
-Allow the computer to turn off this device to save power
+- Allow the computer to turn off this device to save power
 
-This setting can cause periodic NIC resets.
+- This setting can cause periodic NIC resets.
 
 6.3 Validate 802.1X / Certificates
 
@@ -195,17 +195,17 @@ This setting can cause periodic NIC resets.
 
 Check:
 
-Machine/user cert exists
+- Machine/user cert exists
 
-Cert is not expired
+- Cert is not expired
 
-Trusted root CA installed
+- Trusted root CA installed
 
-Correct EAP/PEAP settings
+- Correct EAP/PEAP settings
 
-System time is accurate
+- System time is accurate
 
-Even a slightly expired cert will cause constant reauth failures.
+- Even a slightly expired cert will cause constant reauth failures.
 
 7. Retest
 
