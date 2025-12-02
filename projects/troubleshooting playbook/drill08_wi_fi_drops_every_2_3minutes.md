@@ -11,13 +11,13 @@ User is on Wi-Fi only (wired works fine or isn’t used)
 
 Connection works for 1–3 minutes, then:
 
-Drops
+- Drops
 
-Times out
+- Times out
 
-Hangs
+- Hangs
 
-Reconnects automatically
+- Reconnects automatically
 
 Other users on the same Wi-Fi do not have the issue
 
@@ -28,15 +28,15 @@ ping -t <gateway_or_domain_controller_IP>
 
 Watch for:
 
-Repeating Request timed out every 2–3 minutes
+- Repeating Request timed out every 2–3 minutes
 
-If it’s consistent → think:
+- If it’s consistent → think:
 
-DHCP lease too short
+- DHCP lease too short
 
-802.1X periodic reauthentication
+- 802.1X periodic reauthentication
 
-Wi-Fi adapter power-saving toggling
+- Wi-Fi adapter power-saving toggling
 
 2. Check the IP & DHCP Lease
 
@@ -47,17 +47,17 @@ ipconfig /all
 
 For the Wireless adapter, verify:
 
-IPv4 address
+- IPv4 address
 
-Subnet mask
+- Subnet mask
 
-Default gateway
+- Default gateway
 
-DNS servers
+- DNS servers
 
-DHCP Enabled (Yes/No)
+- DHCP Enabled (Yes/No)
 
-Lease Obtained / Lease Expires
+- Lease Obtained / Lease Expires
 
 🔑 Clue from drill:
 
@@ -65,23 +65,23 @@ Lease duration was only 3 minutes, matching the drop interval.
 
 A lease this short usually means:
 
-Misconfigured DHCP scope
+- Misconfigured DHCP scope
 
-DHCP scope nearly exhausted
+- DHCP scope nearly exhausted
 
-Rogue settings pushed by GPO or a profile
+- Rogue settings pushed by GPO or a profile
 
 3. Verify the DHCP Scope (Server-Side)
 
 Check:
 
-Lease duration (should be hours, not minutes)
+- Lease duration (should be hours, not minutes)
 
-Scope utilization (avoid 90%+)
+- Scope utilization (avoid 90%+)
 
-Recent configuration changes
+- Recent configuration changes
 
-Incorrect policies or reservations
+- Incorrect policies or reservations
 
 Fix:
 
@@ -96,21 +96,21 @@ If only this device still drops → the issue is client-side.
 4. Compare Wired vs Wireless
 Plug in Ethernet and test:
 
-Stable ping on wired?
+- Stable ping on wired?
 
-Normal DHCP lease?
+- Normal DHCP lease?
 
-No disconnects?
+- No disconnects?
 
 If wired works fine → the problem is Wi-Fi specific:
 
-Wireless NIC
+- Wireless NIC
 
-802.1X authentication
+- 802.1X authentication
 
-Driver
+- Driver
 
-Power settings
+- Power settings
 
 5. Event Viewer: Client-Side Truth
 
@@ -121,63 +121,63 @@ Event Viewer → Windows Logs → System
 
 Filter sources:
 
-DHCP-Client
+- DHCP-Client
 
-WLAN-AutoConfig
+- WLAN-AutoConfig
 
-EAPOL
+- EAPOL
 
-Microsoft-Windows-8021X
+- Microsoft-Windows-8021X
 
-NetwtwXX (Intel driver logs)
+- NetwtwXX (Intel driver logs)
 
 Look for:
-DHCP-Client
+- DHCP-Client
 
-Event ID 1001 — renewal failure
+- Event ID 1001 — renewal failure
 
-Event ID 1002 — DHCPNACK
+- Event ID 1002 — DHCPNACK
 
-Wireless
+- Wireless
 
-Disconnected: authentication failure
+- Disconnected: authentication failure
 
-Roaming/reconnect loops
+- Roaming/reconnect loops
 
-802.1X / EAP
+- 802.1X / EAP
 
-Reauthentication timed out
+- Reauthentication timed out
 
-TLS negotiation failed
+- TLS negotiation failed
 
-Certificate not found/expired
+- Certificate not found/expired
 
 If failures always happen at the 2–3 minute mark, you’re looking at:
 
-Bad reauthentication attempts
+- Bad reauthentication attempts
 
-Driver crash
+- Driver crash
 
-Cert or supplicant issue
+- Cert or supplicant issue
 
 6. Fix the Wi-Fi Side
 6.1 Update the Wireless Driver
 
-Device Manager → Network Adapters
+- Device Manager → Network Adapters
 
-Compare version/date to approved version
+- Compare version/date to approved version
 
-Update driver
+- Update driver
 
-Reboot
+- Reboot
 
-Outdated Wi-Fi drivers notoriously cause:
+- Outdated Wi-Fi drivers notoriously cause:
 
-802.1X reauth loops
+- 802.1X reauth loops
 
-DHCP lease drops
+- DHCP lease drops
 
-Random disconnects
+- Random disconnects
 
 6.2 Disable Power Saving on the NIC
 
