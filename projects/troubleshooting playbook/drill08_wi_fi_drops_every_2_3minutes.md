@@ -5,6 +5,7 @@ permalink: /projects/troubleshooting%20playbook/drill08/
 ---
 
 🛜 Wi-Fi Drops Every 2–3 Minutes (Single User) — Troubleshooting Playbook
+
 🧩 Symptom Pattern
 
 1. Confirm the Pattern
