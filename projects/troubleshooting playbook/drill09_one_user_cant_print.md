@@ -9,7 +9,7 @@ Problem Summary
 
 A single user cannot print to a shared network printer, even though the printer is online and other users can print normally. On this user’s PC, print jobs either stay stuck on "Printing…" or briefly appear in the queue and disappear with no output. Restarting the spooler or clearing the queue does not resolve the issue, meaning the problem is isolated to this workstation.
 
-1. Check This User’s Print Queue
+## 1. Check This User’s Print Queue
 
  - Devices & Printers → Right-click printer → See what’s printing
 
@@ -19,7 +19,7 @@ A single user cannot print to a shared network printer, even though the printer 
 
 If the job hangs or disappears while others can print, the issue is specific to this machine.
 
-2. Compare With a Working PC
+## 2. Compare With a Working PC
 
 On a known-good machine:
 
@@ -29,7 +29,7 @@ On a known-good machine:
 
 This shows the correct configuration.
 
-3. Check the Printer Port on the Broken PC
+## 3. Check the Printer Port on the Broken PC
 
 Printer Properties → Ports
 
@@ -42,7 +42,7 @@ Verify:
 Clue from this drill:
 Working PCs used Standard TCP/IP; the broken one used WSD.
 
-4. Fix the Printer Port
+## 4. Fix the Printer Port
 
 If WSD is selected:
 
@@ -60,7 +60,7 @@ If WSD is selected:
 
 Test print again — the job should process and the printer should respond.
 
-5. If Still Broken: Driver Cleanup
+## 5. If Still Broken: Driver Cleanup
 
 If the port is correct but printing still fails:
 
