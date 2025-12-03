@@ -8,7 +8,7 @@ permalink: /projects/troubleshooting%20playbook/drill08/
 
 🧩 Symptom Pattern
 
-1. Confirm the Pattern
+## 1. Confirm the Pattern
 
 Run a continuous ping:
 
@@ -23,7 +23,7 @@ Short DHCP lease
 
 Wi-Fi adapter power saving
 
-2. Check IP + DHCP Lease
+## 2. Check IP + DHCP Lease
 
 Run:
 
@@ -44,7 +44,7 @@ Lease Obtained / Expires
 
 If lease duration is a few minutes, that’s the cause.
 
-3. Check DHCP Scope (Server)
+## 3. Check DHCP Scope (Server)
 
 Verify:
 
@@ -60,7 +60,7 @@ Set lease to normal (ex: 8 hours)
 
 If only one device has issues, continue with client-side checks.
 
-4. Test Wired vs Wireless
+## 4. Test Wired vs Wireless
 
 Plug in Ethernet.
 
@@ -74,7 +74,7 @@ Driver issue
 
 Power-saving issue
 
-5. Event Viewer (Client)
+## 5. Event Viewer (Client)
 
 Event Viewer → Windows Logs → System
 Filter sources:
@@ -95,7 +95,7 @@ Disconnect reason codes
 
 If failures line up with the 2–3 minute cycle → authentication or driver problem.
 
-6. Fix the Wi-Fi Adapter
+## 6. Fix the Wi-Fi Adapter
 Update Driver
 
 Device Manager → Network Adapters
@@ -118,7 +118,7 @@ Trust chain present
 
 Correct EAP/PEAP settings
 
-7. Retest
+## 7. Retest
 
 Run:
 
@@ -134,6 +134,6 @@ Stable connection
 
 Clean Event Viewer logs
 
-Root Cause (from drill)
+## Root Cause (from drill)
 
 Outdated wireless driver → 802.1X reauthentication failures → DHCP renewal fails → Wi-Fi drops every 2–3 minutes.
