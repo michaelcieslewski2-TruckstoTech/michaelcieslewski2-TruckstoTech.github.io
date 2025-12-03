@@ -100,7 +100,6 @@ Windows GUI path:
 6. Fix the suffix:
 
  - Change corp.lcoal to corp.local.
-
 7. Click OK → OK → Close to apply.
 
 (In a real environment this could also be fixed via DHCP or GPO, but for the drill you fix it locally.)
@@ -158,10 +157,8 @@ Result:
 
 1. Read the error messages carefully.
 “DNS name does not exist” points to a DNS/name-resolution problem, not necessarily “server is down.”
-
 2. Use nslookup to confirm DNS behavior.
 It shows which DNS server you are using and what it returns.
-
 3. Always compare with a known-good machine.
 Running ipconfig /all on both broken and working clients is extremely powerful. Pay close attention to:
 
@@ -172,10 +169,8 @@ Running ipconfig /all on both broken and working clients is extremely powerful. 
  - DNS servers
 
  - DNS suffix/search domain
-
 4. Tiny typos can cause big problems.
 corp.lcoal vs corp.local is easy to miss unless you slow down and scan carefully.
-
 5. Generic flow for “internal site not resolving, others can reach it”:
 
  - Confirm basic connectivity (internet works, gateway reachable).
