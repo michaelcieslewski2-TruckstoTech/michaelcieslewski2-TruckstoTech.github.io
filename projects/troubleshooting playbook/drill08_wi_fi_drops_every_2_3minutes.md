@@ -17,11 +17,11 @@ ping -t <gateway_or_dc_IP>
 
 If you see timeouts every 2–3 minutes, suspect:
 
-Short DHCP lease
+ - Short DHCP lease
 
-802.1X reauthentication
+ - 802.1X reauthentication
 
-Wi-Fi adapter power saving
+- Wi-Fi adapter power saving
 
 ## 2. Check IP + DHCP Lease
 
@@ -32,15 +32,15 @@ ipconfig /all
 
 Check the wireless adapter for:
 
-IPv4
+ - IPv4
 
-Gateway
+ - Gateway
 
-DNS
+ - DNS
 
-DHCP Enabled
+ - DHCP Enabled
 
-Lease Obtained / Expires
+ - Lease Obtained / Expires
 
 If lease duration is a few minutes, that’s the cause.
 
@@ -48,15 +48,15 @@ If lease duration is a few minutes, that’s the cause.
 
 Verify:
 
-Lease duration (should be hours)
+ - Lease duration (should be hours)
 
-Scope utilization
+ - Scope utilization
 
-Recent changes
+ - Recent changes
 
 Fix:
 
-Set lease to normal (ex: 8 hours)
+ - Set lease to normal (ex: 8 hours)
 
 If only one device has issues, continue with client-side checks.
 
@@ -66,32 +66,32 @@ Plug in Ethernet.
 
 If wired is stable and Wi-Fi drops:
 
-Wireless NIC issue
+ - Wireless NIC issue
 
-Driver issue
+ - Driver issue
 
-802.1X issue
+ - 802.1X issue
 
-Power-saving issue
+ - Power-saving issue
 
 ## 5. Event Viewer (Client)
 
 Event Viewer → Windows Logs → System
 Filter sources:
 
-DHCP-Client
+ - DHCP-Client
 
-WLAN-AutoConfig
+ - WLAN-AutoConfig
 
-802.1X / EAP
+ - 802.1X / EAP
 
 Look for:
 
-DHCP renewal failures
+ - DHCP renewal failures
 
-Authentication failures
+ - Authentication failures
 
-Disconnect reason codes
+ - Disconnect reason codes
 
 If failures line up with the 2–3 minute cycle → authentication or driver problem.
 
@@ -106,17 +106,17 @@ Disable Power Saving
 Wireless Adapter → Properties → Power Management
 Uncheck:
 
-Allow the computer to turn off this device
+ - Allow the computer to turn off this device
 
 Verify 802.1X (if used)
 
 Check:
 
-Certificates not expired
+ - Certificates not expired
 
-Trust chain present
+ - Trust chain present
 
-Correct EAP/PEAP settings
+ - Correct EAP/PEAP settings
 
 ## 7. Retest
 
@@ -128,11 +128,11 @@ ping -t <gateway_or_dc_IP>
 Test for 5–10 minutes.
 Look for:
 
-No timeouts
+ - No timeouts
 
-Stable connection
+ - Stable connection
 
-Clean Event Viewer logs
+ - Clean Event Viewer logs
 
 ## Root Cause (from drill)
 
