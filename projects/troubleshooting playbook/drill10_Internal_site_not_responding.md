@@ -88,20 +88,13 @@ We now know the root cause: incorrect DNS suffix on the broken machine.
 Windows GUI path:
 
 1. Right-click the network icon → Open Network & Internet settings.
-
 2. Click Change adapter options.
-
 3. Right-click the active Ethernet/Wi-Fi adapter → Properties.
-
 4. Select Internet Protocol Version 4 (TCP/IPv4) → Properties.
-
 5. Click Advanced… → go to the DNS tab.
-
 6. Fix the suffix:
-
  - Change corp.lcoal to corp.local.
 7. Click OK → OK → Close to apply.
-
 (In a real environment this could also be fixed via DHCP or GPO, but for the drill you fix it locally.)
 
 ## Re-Test Name Resolution
@@ -161,24 +154,15 @@ Result:
 It shows which DNS server you are using and what it returns.
 3. Always compare with a known-good machine.
 Running ipconfig /all on both broken and working clients is extremely powerful. Pay close attention to:
-
- - IP address and subnet
-
+- IP address and subnet
  - Default gateway
-
  - DNS servers
-
  - DNS suffix/search domain
 4. Tiny typos can cause big problems.
 corp.lcoal vs corp.local is easy to miss unless you slow down and scan carefully.
 5. Generic flow for “internal site not resolving, others can reach it”:
-
  - Confirm basic connectivity (internet works, gateway reachable).
-
  - Run nslookup <hostname> on the broken machine.
-
  - Compare ipconfig /all with a working machine.
-
  - Fix any DNS misconfig (servers, suffix, static entries).
-
  - Re-test with nslookup, then ping, then a browser.
