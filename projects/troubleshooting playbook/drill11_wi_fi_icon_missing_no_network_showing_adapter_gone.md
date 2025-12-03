@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Troubleshooting Drill #11 – Wi-Fi Wi-Fi Icon Missing/ No Networks Showing/ Adapter Gone"
+title: "Troubleshooting Drill #11 – Wi-Fi Icon Missing/ No Networks Showing/ Adapter Gone"
 permalink: /projects/troubleshooting%20playbook/drill11/
 ---
 
